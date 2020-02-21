@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- declaring language, sourced from w3 schools -->
+<html lang="en">
+	<head>
+	<!-- styles -->
+	<title>Bun Bun Bake Shop | blackberry</title>
+	<link rel="stylesheet" type="text/css" href="blackberrystyles.css">
+
+	<!--- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aleo:400,700&display=swap" rel="stylesheet">
+
+	<!-- character encoding, sourced from stackoverflow -->
+	<meta charset="UTF-8">
+
+	</head>
+
+
+	<body>
+		<header>
+			<div class="logo">
+				<a href="home.html">
+					<img src="logo.png" alt="Bun Bun Bake Shop logo">
+				</a>
+			</div>
+			<a href="home.html"><div class="box home">home</div></a>
+			<a href="about.html"><div class="box about">about</div></a>
+			<a href="menu.html"><div class="box menu">menu</div></a>
+			<a href="contact.html"><div class="box contact">contact</div></a>
+			<div class="button cart"><a href="cart.html">shopping cart (0)</a></div>
+		</header>
+
+		<div class="blackberry-flavor">
+			<p><a href="menu.html">« back to menu</a></p><br><br>
+			<img src="blackberrylarge.png" alt="blackberry cinnamon roll">
+			<div id="blackberry-text">
+				<h2>blackberry</h2>
+				<h5>our sweet and delicious blackberry cinnamon roll is made with the freshest blackberries from Pittsburgh. we source our blackberries daily and bake our cinnamon rolls daily so you can enjoy the deliciousness of a fresh and fruity cinnamon roll. <br>choose from a selection of our delectable glazes: sugar-milk, vanilla-milk, or double-chocolate! our glazes are created in the store and are mixed to perfectly complement our cinnamon rolls.</h5>
+			</div>
+			<div class="customize-rolls">
+				<form method="POST">
+					<section class="glazes">
+						<h5><label for="glaze">glaze*</label></h5>
+						<span class="glaze-class">
+							<select name="glaze" id="glaze">
+								<option value="none">none</option>
+								<option value="sugar-milk">sugar-milk</option>
+								<option value="vanilla-milk">vanilla-milk</option>
+								<option value="double-chocolate">double-chocolate</option>
+							</select>
+						</span>
+					</section>
+					<br>
+					<section class="rolls">
+						<h5><label for="roll">number of rolls*</label></h5>
+						<span class="roll-class">
+							<select name="roll" id="roll">
+								<option value="1">1</option>
+								<option value="3">3</option>
+								<option value="6">6</option>
+								<option value="12">12</option>
+							</select>
+						</span>
+					</section>
+					<br>
+					<section class="boxes">
+						<h5><label for="box">boxes*</label></h5>
+						<span class="box-class">
+							<input type="number" name="box" id="box" value="1" min="1">
+						</span>
+					</section>
+				</form>
+			</div>
+			<div class="price">
+				<h2>$6.00</h2>
+			</div>
+
+			<div class="addcart">
+				<h2>add to cart</h2>
+			</div>
+		</div>
+			
+
+		<footer>
+			<!-- bun bun info -->
+			<div id="shop">bun bun bake shop</div>
+			<div id="address">5000 Forbes Avenue, Pittsburgh PA 15213</div>
+			<div id="info">grab cinnamon rolls 7am-7pm daily</div>
+
+			<!-- bun bun email -->
+			<div id="news-info">join our newsletter for more discounts and updates!</div> 
+			<form method="POST">
+				<input type="text" name="email" id="email" placeholder="email address">
+				<input type="submit" value="sign up">
+			</form>
+
+			<!-- bottom links -->
+
+			<div id="bottom-links">
+				<p>contact us - terms & conditions - privacy policy</p>
+				<p>facebook - instagram - twitter - yelp</p>
+			</div>
+
+			<!-- copyright bottom -->
+			<div id="copyright">
+				<p>Copyright 2020 - Bun Bun Bake Shop</p>
+			</div>
+		</footer>
+
+
+	</body>
+</html>
