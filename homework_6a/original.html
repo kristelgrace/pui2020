@@ -4,8 +4,11 @@
 <html lang="en">
 	<head>
 	<!-- styles -->
-	<title>Bun Bun Bake Shop | blackberry</title>
-	<link rel="stylesheet" type="text/css" href="blackberrystyles.css">
+	<title>Bun Bun Bake Shop | original</title>
+	<link rel="stylesheet" type="text/css" href="originalstyles.css">
+
+	<!-- javascript -->
+	<script src="cart.js"></script>
 
 	<!--- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
@@ -28,22 +31,23 @@
 			<a href="about.html"><div class="box about">about</div></a>
 			<a href="menu.html"><div class="box menu">menu</div></a>
 			<a href="contact.html"><div class="box contact">contact</div></a>
-			<div class="button cart"><a href="cart.html">shopping cart (0)</a></div>
+			<div class="place"></div>
+			<span class="cart"><a href="cart.html" id="shoppingCart">shopping cart (0)</a></span>
 		</header>
 
-		<div class="blackberry-flavor">
-			<p><a href="menu.html">« back to menu</a></p><br><br>
-			<img src="blackberrylarge.png" alt="blackberry cinnamon roll">
-			<div id="blackberry-text">
-				<h2>blackberry</h2>
-				<h5>our sweet and delicious blackberry cinnamon roll is made with the freshest blackberries from Pittsburgh. we source our blackberries daily and bake our cinnamon rolls daily so you can enjoy the deliciousness of a fresh and fruity cinnamon roll. <br>choose from a selection of our delectable glazes: sugar-milk, vanilla-milk, or double-chocolate! our glazes are created in the store and are mixed to perfectly complement our cinnamon rolls.</h5>
+		<div class="original-flavor">
+			<p><a href="menu.html">« back to menu</a></p>
+			<img id="origImage" src="none.png" alt="original cinnamon roll">
+			<div id="original-text">
+				<h2>original</h2>
+				<h5>our famous original cinnamon roll is made with the finest ingredients imported from Sweden. we bake our cinnamon rolls daily so you can enjoy the amazing goodness of a deliciously sweet and fragrant cinnamon roll. a gluten-free version is also available. <br>choose from a selection of our delectable glazes: sugar-milk, vanilla-milk, or double-chocolate! our glazes are created in the store and are mixed to perfectly complement our cinnamon rolls.</h5>
 			</div>
 			<div class="customize-rolls">
-				<form method="POST">
+				<form method="POST" id="originalForm">
 					<section class="glazes">
-						<h5><label for="glaze">glaze*</label></h5>
+						<h5><label for="glaze">glaze</label></h5>
 						<span class="glaze-class">
-							<select name="glaze" id="glaze">
+							<select name="glaze" id="glaze" onchange="updateGlaze()">
 								<option value="none">none</option>
 								<option value="sugar-milk">sugar-milk</option>
 								<option value="vanilla-milk">vanilla-milk</option>
@@ -53,9 +57,9 @@
 					</section>
 					<br>
 					<section class="rolls">
-						<h5><label for="roll">number of rolls*</label></h5>
+						<h5><label for="roll" >number of rolls</label></h5>
 						<span class="roll-class">
-							<select name="roll" id="roll">
+							<select name="roll" id="roll" onchange="updateRoll()">
 								<option value="1">1</option>
 								<option value="3">3</option>
 								<option value="6">6</option>
@@ -65,22 +69,19 @@
 					</section>
 					<br>
 					<section class="boxes">
-						<h5><label for="box">boxes*</label></h5>
+						<h5><label for="boxOrder">boxes</label></h5>
 						<span class="box-class">
-							<input type="number" name="box" id="box" value="1" min="1">
+							<input type="number" name="box" id="boxOrder" value="1" min="1" onchange="updateBox()">
 						</span>
 					</section>
+					<h2 id="priceOriginal">$5.00</h2>
+
+					<div class="addcart">
+						<input type="button" onclick="getOrder()" value="add to cart">
+					</div>
 				</form>
 			</div>
-			<div class="price">
-				<h2>$6.00</h2>
-			</div>
-
-			<div class="addcart">
-				<h2>add to cart</h2>
-			</div>
-		</div>
-			
+		</div>	
 
 		<footer>
 			<!-- bun bun info -->

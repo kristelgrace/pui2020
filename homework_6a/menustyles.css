@@ -89,14 +89,24 @@ a .box:hover {
 	max-height: 30%;
 }
 
-.home, .about, .contact {
+.home {
 	grid-area: b;
+	border-bottom: 6px solid #F9F3E2;
+}
+
+.about {
+	grid-area: c;
 	border-bottom: 6px solid #F9F3E2;
 }
 
 .menu {
 	grid-area: d;
 	border-bottom: 6px solid #FDE19A;
+}
+
+.contact {
+	grid-area: e;
+	border-bottom: 6px solid #F9F3E2;
 }
 
 
@@ -109,7 +119,8 @@ a .box:hover {
 	align-items: center;
 	font-family: 'Cabin', sans-serif;
 	font-size: 18px;
-	cursor: pointer;
+	border-radius: 5px;
+	background-color: #FDE19A;
 }
 
 .button {

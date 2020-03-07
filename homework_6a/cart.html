@@ -7,6 +7,9 @@
 	<title>Bun Bun Bake Shop | shopping cart</title>
 	<link rel="stylesheet" type="text/css" href="cartstyles.css">
 
+	<!-- javascript -->
+	<script src="cart.js"></script>
+
 	<!--- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Aleo:400,700&display=swap" rel="stylesheet">
@@ -28,22 +31,30 @@
 			<a href="about.html"><div class="box about">about</div></a>
 			<a href="menu.html"><div class="box menu">menu</div></a>
 			<a href="contact.html"><div class="box contact">contact</div></a>
-			<div class="button cart"><a href="cart.html">shopping cart (0)</a></div>
+			<div class="place"></div>
+			<span class="cart"><a href="cart.html" id="shoppingCart">shopping cart (0)</a></span>
 		</header>
+
+		<!-- progress bar -->
 
 		<div class="progress">
 			<h4><span id="current">view cart</span> > enter payment > complete order</h4>
 
 		</div>
 
+		<!-- items in the cart -->
+
 		<div class="cart-items">
-			<span class="item-1">
-				<img src="smalloriginal.png">
+
+			<!-- item #1 -->
+
+			<div class="item-1">
+				<img src="smalloriginal.png" alt="original cinnamon roll">
 				<div id="item-desc">
 					<h4>original</h4>
 					<p>our famous original cinnamon roll</p>
 				</div>
-				<span class="glazes">
+				<div class="glazes">
 					<p><label for="glaze">glaze</label></p>
 					<span class="glaze-class">
 						<select name="glaze" id="glaze">
@@ -53,8 +64,8 @@
 							<option value="double-chocolate">double-chocolate</option>
 						</select>
 					</span>
-				</span>
-				<span class="rolls">
+				</div>
+				<div class="rolls">
 					<p><label for="roll">rolls</label></p>
 					<span class="roll-class">
 						<select name="roll" id="roll">
@@ -64,20 +75,24 @@
 							<option value="12">12</option>
 						</select>
 					</span>
-				</span>
-				<span class="boxes">
+				</div>
+				<div class="boxes">
 					<p><label for="box">boxes</label></p>
 					<span class="box-class">
 						<input type="number" name="box" id="box" value="1" min="1">
 					</span>
-				</span>
+				</div>
 				<div class="price">
 					<p>price</p>
 					<h5>$5.00</h5>
 				</div>
-			</span>
+			</div>
 
-			<span class="right-col">
+			<!-- elements in the right column -->
+
+			<div class="right-col">
+				<!-- cart summary box -->
+
 				<div class="cart-summary">
 					<div class="bag-items">
 						<div id="center"><h4>shopping cart summary</h4></div>
@@ -90,6 +105,8 @@
 					</div>
 				</div>
 
+				<!-- promotional code box -->
+
 				<div class="promo-code">
 					<h4>promotion code</h4>
 					<form method="POST">
@@ -97,10 +114,12 @@
 					</form>
 				</div>
 
+				<!-- checkout button -->
+
 				<div class="checkout button">
 					<h2>checkout</h2>
 				</div>
-			</span>
+			</div>
 
 		</div>
 
