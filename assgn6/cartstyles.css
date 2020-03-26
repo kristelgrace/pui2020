@@ -151,15 +151,17 @@ a .box:hover {
 
 .all-item-rows {
 	margin-left: 45px;
-	margin-right: 510px;
+	width: 775px;
 	display: grid;
 	grid-auto-rows: auto;
 	grid-row-gap: 45px;
+	float: left;
 }
 
 .item-1 {
 	margin-left: 45px;
-	margin-right: 510px;
+	float: left;
+	width: 775px;
 	display: grid;
 	grid-template-areas:
 	"a b b b b"
@@ -193,6 +195,7 @@ a .box:hover {
 	float: right;
 	width: 18px;
 	margin: 0;
+	cursor: pointer;
 }
 
 .item-1 a {
@@ -338,10 +341,10 @@ a .box:hover {
 
 .right-col {
 	position: relative;
-	margin-top: 0;
-	margin-left: 1000px;
-	margin-right: 45px;
 	float: right;
+	margin-top: 0;
+	width: 420px;
+	margin-right: 45px;
 	display: grid;
 	grid-template-areas:
 	"x"

@@ -206,6 +206,8 @@ function removeItem () {
 
   var removeIndex = document.querySelectorAll('.remove');
   var allItems = document.querySelectorAll('.item-1');
+
+  var itemsInBag = document.getElementById("itemCount").textContent; //retrieve items in bag count
   console.log(removeIndex)
 
   removeIndex.forEach((item) => {
@@ -213,24 +215,34 @@ function removeItem () {
       console.log(item)
       item.addEventListener('click', ((j) =>
       {
-        console.log("clicked")
-        //return function()
-        //{
-          console.log(item)
-          console.log(cartItems)
-          var index = cartItems.indexOf(item)
-          cartItems.splice(index)
-          var element = allItems.item(index)
+        console.log("clicked");
+        console.log(item);
+        console.log(cartItems);
+        var index = Array.prototype.indexOf.call(removeIndex, item);
+        console.log(index);
+        cartItems.splice(index, 1);
 
-          element.remove()
-          console.log(cartItems)
-          console.log("poop")
-        //}
+        if (parseInt(itemsInBag) == 1)
+        {
+          allItems.item(index).innerHTML = "there are no items in your cart!" + "<br>" + "visit a store or check our menu to start ordering online";
+      		allItems.item(index).style.display = "block";
+      		allItems.item(index).style.textAlign = "center";
+          console.log(cartItems);
+        }
+        else if (parseInt(itemsInBag) >= 2)
+        {
+          allItems.item(index).remove();
+          console.log(cartItems);
+        }
+
+        sessionStorage.setObj("cartItems", cartItems);
+        sessionStorage.setObj("allItems", allItems);
+      	itemsInBag = parseInt(itemsInBag)-1; // add by one when add to cart is clicked
+      	document.getElementById("itemCount").textContent = itemsInBag; // set the displayed item count to new item count
+        sessionStorage.setItem("itemsInBag", itemsInBag); //set item count in storage
       }))
     }
-
-  });
-
+  })
 }
 
 
@@ -271,13 +283,13 @@ function onLoad () {
     removeItem()
   }
 
-  if (cartItems !== null)
+  if (cartItems !== null && cartItems!== 0)
   {
     for (var i = 0; i < cartItems.length; i++)
     {
       var cartGlaze = document.getElementsByClassName("glaze2")[i]; //get the glaze options in cart page
 
-      	if (cartGlaze !== null)
+      	if (cartGlaze !== null && cartGlaze!== undefined)
       	{
       		//console.log(cartGlaze);
       		var glazeCartIndex = cartGlaze.selectedIndex; //retrieve selected index of glaze
@@ -318,7 +330,7 @@ function onLoad () {
 
       	var cartRoll = document.getElementsByClassName("roll2")[i]; //retrieve the roll in first item
 
-      	if (cartRoll !== null)
+      	if (cartRoll !== null && cartRoll !== undefined)
       	{
       		//console.log(cartRoll);
       		var rollCartIndex = cartRoll.selectedIndex;
@@ -354,7 +366,7 @@ function onLoad () {
       	var cartBox = document.getElementsByClassName("box2")[i]; // retrieve the box in first item
 
         // update box display number based on cart selection
-      	if (cartBox !== null)
+      	if (cartBox !== null && cartBox !== undefined)
       	{
       		var boxCartValue = cartBox.value;
       		//console.log(boxCartValue)
@@ -375,7 +387,11 @@ function onLoad () {
         subtotal += singlePrice //add price
       	}
 
+        var priceDisplay = document.getElementsByClassName("bag-price")[0];
+        if (priceDisplay !== undefined)
+        {
+          document.getElementsByClassName("bag-price")[0].textContent = "$" + subtotal + ".00" //update price display
+          document.getElementsByClassName("bag-price")[1].textContent = "$" + subtotal + ".00" //update price display
+        }
       }
-      document.getElementsByClassName("bag-price")[0].textContent = "$" + subtotal + ".00" //update price display
-      document.getElementsByClassName("bag-price")[1].textContent = "$" + subtotal + ".00" //update price display
 }
