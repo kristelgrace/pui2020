@@ -62,14 +62,12 @@ function getOrder() {
   // adding the newest item to the array of items
 	if (itemsInBag == 1)
 	{
-		//console.log(itemAdded)
 		var cartItems = new Array(itemAdded); //create new array if first item
 		sessionStorage.setObj("cartItems", cartItems); //save the array
 	}
 	else if (itemsInBag >= 2)
 	{
 		var cartItems = sessionStorage.getObj("cartItems") //retrieve array for more than one item in bag
-		//console.log(itemAdded);
 		cartItems.push(itemAdded); //add newest item to array
 		sessionStorage.setObj("cartItems", cartItems); //save the new array
 	}
@@ -144,13 +142,9 @@ function updateCartGlaze() {
   		currentPicture.src="smallchoco.png";
   	}
 
-  	//console.log(cartItems[0]);
   	cartItems[i].glaze = currentGlaze; // update current selected glaze
-  	//console.log(cartItems[0].glaze)
-  	//console.log(cartItems)
     cartItems[i].image = currentPicture.src // update current picture
   	sessionStorage.setObj("cartItems", cartItems) //save changes to array
-  	//console.log(cartItems)
   }
 }
 
@@ -205,9 +199,9 @@ function removeItem () {
   var cartItems = sessionStorage.getObj("cartItems"); // retrieve cart items
   var removeIndex = document.querySelectorAll('.remove');
   var allItems = document.querySelectorAll('.item-1');
-
   var itemsInBag = document.getElementById("itemCount").textContent; //retrieve items in bag count
 
+  // listen to check if the "x" is clicked, sourced from w3schools and stackoverflow
   removeIndex.forEach((item) => {
     {
       item.addEventListener('click', ((j) =>
@@ -276,16 +270,12 @@ function onLoad () {
 	}
 
   var cartItems = sessionStorage.getObj("cartItems")
-  //console.log(cartItems.length)
   if (cartItems !== null && cartItems.length > 1)
   {
     var cartItems = sessionStorage.getObj("cartItems", cartItems);
     for (var i = 0; i < (cartItems.length-1); i++)
     {
-      //console.log(i)
-      //console.log(cartItems[i])
       let boxes = document.getElementsByClassName("all-items")[0];
-      //console.log(boxes)
       let clone = document.getElementsByClassName("item-1")[0];
       let newClone = clone.cloneNode([true])
       boxes.appendChild(newClone);
@@ -301,15 +291,11 @@ function onLoad () {
 
       	if (cartGlaze !== null && cartGlaze!== undefined)
       	{
-      		//console.log(cartGlaze);
       		var glazeCartIndex = cartGlaze.selectedIndex; //retrieve selected index of glaze
-      		//console.log(glazeCartIndex)
       		var itemsInCart = sessionStorage.getObj("cartItems"); //retrieve the array of items in cart
-      		//console.log(itemsInCart[0]);
 
       		var displayGlaze = itemsInCart[i].glaze; //retrieve the glaze in first item
       		var glazeDisplayIndex = 0; // set initial index number
-      		//console.log(displayGlaze);
 
       		var currentPicture = document.getElementsByClassName("itemImage")[i]; // retrieve the small image in cart
 
@@ -334,7 +320,6 @@ function onLoad () {
       				glazeDisplayIndex = 3;
       				currentPicture.src = "smallchoco.png";
       		}
-      		//console.log(glazeDisplayIndex)
       		cartGlaze.selectedIndex = glazeDisplayIndex
       	}
 
@@ -342,15 +327,11 @@ function onLoad () {
 
       	if (cartRoll !== null && cartRoll !== undefined)
       	{
-      		//console.log(cartRoll);
       		var rollCartIndex = cartRoll.selectedIndex;
-      		//console.log(rollCartIndex)
       		var itemsInCart = sessionStorage.getObj("cartItems");
-      		//console.log(itemsInCart[0]);
       		/// access the actual roll
       		var displayRoll = itemsInCart[i].roll;
       		var rollDisplayIndex = 0;
-      		//console.log(displayRoll);
 
           //update roll display index based on cart selection
       		if (displayRoll == "1")
@@ -369,7 +350,6 @@ function onLoad () {
       		{
       				rollDisplayIndex = 3;
       		}
-      		//console.log(rollDisplayIndex)
       		cartRoll.selectedIndex = rollDisplayIndex
       	}
 
@@ -379,19 +359,14 @@ function onLoad () {
       	if (cartBox !== null && cartBox !== undefined)
       	{
       		var boxCartValue = cartBox.value;
-      		//console.log(boxCartValue)
       		var itemsInCart = sessionStorage.getObj("cartItems");
-      		//console.log(itemsInCart[0]);
       		/// access the actual glaze
       		var displayRoll = itemsInCart[i].box;
-      		//console.log(displayRoll);
       		cartBox.value = displayRoll
 
           var singlePrice = priceOrig*parseInt(itemsInCart[i].box)*parseInt(itemsInCart[i].roll)
           // update the price displayed on item one
       		document.getElementsByClassName("itemPrice")[i].textContent = "$" + singlePrice + ".00"
-
-            //console.log(boxes)
           }
 
         subtotal += singlePrice //add price
