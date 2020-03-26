@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<!-- declaring language, sourced from w3 schools -->
+<html lang="en">
+	<head>
+	<!-- styles -->
+	<title>Bun Bun Bake Shop | menu</title>
+	<link rel="stylesheet" type="text/css" href="menustyles.css">
+
+	<!-- javascript -->
+	<script src="cart.js"></script>
+
+	<!--- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aleo:400,700&display=swap" rel="stylesheet">
+
+	<!-- character encoding, sourced from stackoverflow -->
+	<meta charset="UTF-8">
+
+	</head>
+
+
+	<body onload="onLoad()">
+		<header>
+			<div class="logo">
+				<a href="home.html">
+					<img src="logo.png" alt="Bun Bun Bake Shop logo">
+				</a>
+			</div>
+			<a href="home.html"><div class="box home">home</div></a>
+			<a href="about.html"><div class="box about">about</div></a>
+			<a href="menu.html"><div class="box menu">menu</div></a>
+			<a href="contact.html"><div class="box contact">contact</div></a>
+			<div class="place"></div>
+			<span class="cart"><a href="cart.html" id="shoppingCart">shopping cart (<span id="itemCount">0</span>)</a></span>
+		</header>
+
+
+		<div class="products">
+			<div class="flavors">
+				<h5>flavors</h5>
+				<p>
+					<input type="checkbox" name="flavors" value="view all">view all<br>
+					<input type="checkbox" name="flavors" value="fruit">fruit<br>
+					<input type="checkbox" name="flavors" value="gluten-free">gluten-free<br>
+					<input type="checkbox" name="flavors" value="nut">nut<br>
+					<input type="checkbox" name="flavors" value="original">original<br>
+				</p>
+			</div>
+
+			<div id="our-products">
+				<h4>our products</h4>
+			</div>
+
+			<div class="sorting">
+				<select id="sort-by" name="sort-by">
+					<option value="popularity">sort by popularity</option>
+					<option value="AtoZ">sort by A to Z</option>
+					<option value="lowestprice">sort by lowest price</option>
+					<option value="highestprice">sort by highest price</option>
+				</select>
+			</div>
+
+			<div class="original roll">
+				<a href="original.html">
+					<img src="original.png" alt="original roll">
+					<h5>original</h5>
+					<div class="price">
+						<h5>$5</h5>
+					</div>
+				</a>
+			</div>
+
+			<div class="blackberry roll">
+				<a href="blackberry.html">
+					<img src="blackberry.png" alt="blackberry roll">
+					<h5>blackberry</h5>
+					<div class="price">
+						<h5>$6</h5>
+					</div>
+				</a>
+			</div>
+
+			<div class="walnut roll">
+				<img src="walnut.png" alt="walnut roll">
+				<h5>walnut</h5>
+				<div class="price">
+					<h5>$6</h5>
+				</div>
+			</div>
+
+			<div class="gf roll">
+				<img src="original.png" alt="original roll (gluten free)">
+				<h5>original (gf)</h5>
+				<div class="price">
+					<h5>$5</h5>
+				</div>
+			</div>
+
+			<div class="pumpkin roll">
+				<img src="pumpkin.png" alt="pumpkin spice roll">
+				<h5>pumpkin spice</h5>
+				<div class="price">
+					<h5>$6</h5>
+				</div>
+			</div>
+
+			<div class="caramel roll">
+				<img src="caramel.png" alt="caramel pecan roll">
+				<h5>caramel pecan</h5>
+				<div class="price">
+					<h5>$6</h5>
+				</div>
+			</div>
+
+		</div>
+
+		<footer>
+			<!-- bun bun info -->
+			<div id="shop">bun bun bake shop</div>
+			<div id="address">5000 Forbes Avenue, Pittsburgh PA 15213</div>
+			<div id="info">grab cinnamon rolls 7am-7pm daily</div>
+
+			<!-- bun bun email -->
+			<div id="news-info">join our newsletter for more discounts and updates!</div>
+			<form method="POST">
+				<input type="text" name="email" id="email" placeholder="email address">
+				<input type="submit" value="sign up">
+			</form>
+
+			<!-- bottom links -->
+
+			<div id="bottom-links">
+				<p>contact us - terms & conditions - privacy policy</p>
+				<p>facebook - instagram - twitter - yelp</p>
+			</div>
+
+			<!-- copyright bottom -->
+			<div id="copyright">
+				<p>Copyright 2020 - Bun Bun Bake Shop</p>
+			</div>
+		</footer>
+
+
+	</body>
+</html>

@@ -1,0 +1,507 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cart",
+				"cartItems"
+			],
+			[
+				"car",
+				"cartItems"
+			],
+			[
+				"item",
+				"itemNumber"
+			],
+			[
+				"ca",
+				"cartItems"
+			],
+			[
+				"sele",
+				"selectedBox"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"sel",
+				"selectedRoll"
+			],
+			[
+				"mai",
+				"margin\tproperty"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"magin",
+				"margin-left\tproperty"
+			],
+			[
+				"margin",
+				"margin-right\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"colu",
+				"column-width\tproperty"
+			],
+			[
+				"colum",
+				"column-count\tproperty"
+			],
+			[
+				"grid-row",
+				"grid-auto-rows\tproperty"
+			],
+			[
+				"grid",
+				"grid-area\tproperty"
+			],
+			[
+				"padding-",
+				"padding-top\tproperty"
+			],
+			[
+				"padding",
+				"padding-bottom\tproperty"
+			],
+			[
+				"grid-",
+				"grid-row-gap\tproperty"
+			],
+			[
+				"grid-a",
+				"grid-area\tproperty"
+			],
+			[
+				"grid-c",
+				"grid-column-gap\tproperty"
+			],
+			[
+				"grid-te",
+				"grid-template-columns"
+			],
+			[
+				"grid-auto",
+				"grid-auto-rows\tproperty"
+			],
+			[
+				"grid-tem",
+				"grid-template-areas\tproperty"
+			],
+			[
+				"magin-",
+				"margin-left\tproperty"
+			],
+			[
+				"main",
+				"margin-top\tproperty"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"fl",
+				"flex-start\talign-self"
+			],
+			[
+				"grid-col",
+				"grid-column-gap\tproperty"
+			],
+			[
+				"grid-co",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"ali",
+				"align-self\tproperty"
+			],
+			[
+				"gi",
+				"grid-area\tproperty"
+			],
+			[
+				"in",
+				"inline\tdisplay"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"margin-",
+				"margin-right\tproperty"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"backgroun",
+				"background-color\tproperty"
+			],
+			[
+				"font-",
+				"font-family\tproperty"
+			],
+			[
+				"shadow",
+				"box-shadow\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"background",
+				"background\tproperty"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"border-",
+				"border-right\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"botto",
+				"border-bottom\tproperty"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"paddi",
+				"padding-top\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"marg",
+				"margin-left\tproperty"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"margi",
+				"margin-top\tproperty"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"wod-",
+				"word-spacing\tproperty"
+			],
+			[
+				"mari",
+				"margin-bottom\tproperty"
+			],
+			[
+				"h",
+				"h3\tTag"
+			],
+			[
+				"mag",
+				"margin-top\tproperty"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"max-",
+				"max-height\tproperty"
+			],
+			[
+				"paddin",
+				"padding-right\tproperty"
+			],
+			[
+				"border-r",
+				"border-radius\tproperty"
+			],
+			[
+				"text-",
+				"text-align\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"spacing",
+				"letter-spacing\tproperty"
+			],
+			[
+				"spaci",
+				"word-spacing\tproperty"
+			],
+			[
+				"font-f",
+				"font-family\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kristel/Desktop/week9-base/index.html",
+		"/Users/kristel/Desktop/week9-base/main.js",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/menu.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/originalstyles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/cart.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/cartstyles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/home.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/about.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/blackberrystyles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/blackberry.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/cart.js",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW6/original.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/week7_lab/index.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/week7_lab/main.js",
+		"/Users/kristel/pui/kristelgrace.github.io/03_02/home.html",
+		"/Users/kristel/Desktop/HW6 copy/home.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/week7_lab/style.css",
+		"/Users/kristel/Desktop/User-Centered Research & Eval/module1.4_section_files/count_local.py",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/README.txt",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/blackberry.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/blackberrystyles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/menu.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/about.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/home.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/original.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/originalstyles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/styles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/menustyles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/HW/HW5/aboutstyles.css",
+		"/Users/kristel/pui/todo/list.html",
+		"/Users/kristel/pui/kristelgrace.github.io/jsQuiz/question.js",
+		"/Users/kristel/pui/kristelgrace.github.io/jsQuiz/index.html",
+		"/Users/kristel/pui/kristelgrace.github.io/index.html",
+		"/Users/kristel/pui/todo/style.css",
+		"/Users/kristel/pui/todo/index.html",
+		"/Users/kristel/pui/todo/main.js",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/todo-master/style.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/todo-master/main.js",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/todo-master/list.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/todo-master/index.html",
+		"/Users/kristel/pui/todo-app/list.html",
+		"/Users/kristel/pui/todo-app/style.css",
+		"/Users/kristel/pui/todo-app/main.js",
+		"/Users/kristel/pui/todo-app/index.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/wk5 starter files/index.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/wk5 starter files/style.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/wk5 starter files/list.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Labs/wk5 starter files/main.js",
+		"/Users/kristel/pui/assignment2-app/index.html",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Lab 1/styles.css",
+		"/Users/kristel/Desktop/Programming Usable Interfaces/Lab 1/index.html"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cart.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
