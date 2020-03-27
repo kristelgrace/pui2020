@@ -4,8 +4,8 @@
 <html lang="en">
 	<head>
 	<!-- styles -->
-	<title>Bun Bun Bake Shop | home</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Bun Bun Bake Shop | shopping cart</title>
+	<link rel="stylesheet" type="text/css" href="wishstyles.css">
 
 	<!-- javascript -->
 	<script src="cart.js"></script>
@@ -36,19 +36,41 @@
 			<span class="cart"><a href="cart.html" id="shoppingCart">shopping cart (<span id="itemCount">0</span>)</a></span>
 		</header>
 
+		<!-- items in the cart -->
 
-		<div class="picture">
-			<img src="valentines.jpg" alt="Valentine's Day Cinnamon Rolls">
-			<div id="valentine-box">
-				<h2>Valentine's Day Specials: New Flavors!</h2>
-				<p>Valentine's Day is right around the corner! Treat yourself or your significant other to our new flavors, strawberry delight and berry overload. Our Valentine's specials come in the shape of a heart! Available for a limited time only.</p>
-				<a href="menu.html"><div id="order-button">view menu</div></a>
-				<div class="arrow left"><img src="arrow-left.png" alt="arrow left"></div>
-				<div class="arrow right"><img src="arrow-right.png" alt="arrow right"></div>
-				<div class="arrow circles"><img src="circles.png" alt="image scroll"></div>
+		<div class="all-wishes">
+			<h2>your wishlist</h2>
+		<!-- item #1 -->
+		<div class="wish-items">
+				<div class="wish-1">
+					<a href="original.html">
+						<img class="wishImage" src="smalloriginal.png" alt="original cinnamon roll">
+					</a>
+
+					<div id="wish-desc">
+						<img src="x.png" alt="remove item from cart" class="removeWish">
+						<h4><a href="original.html">original</a></h4>
+						<p>our famous original cinnamon roll</p>
+					</div>
+					<div class="glaze-wish">
+						<h5>glaze</h5>
+						<p class=wishedGlaze>none</p>
+					</div>
+					<div class="rolls-wish">
+						<h5>rolls</h5>
+						<p class="wishedRolls">1</p>
+					</div>
+					<div class="boxes-wish">
+						<h5>boxes</h5>
+						<p class="wishedBoxes">1</p>
+					</div>
+					<div class="price-wish">
+						<h5>price</h5>
+						<p class="wishedPrice">$5.00</p>
+					</div>
+				</div>
 			</div>
 		</div>
-
 
 		<footer>
 			<!-- bun bun info -->

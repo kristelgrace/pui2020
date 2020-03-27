@@ -32,6 +32,7 @@
 			<a href="menu.html"><div class="box menu">menu</div></a>
 			<a href="contact.html"><div class="box contact">contact</div></a>
 			<div class="place"></div>
+			<span class="wishlist"><a href="wishlist.html" id="wishList">wishlist (<span id="wishCount">0</span>)</a></span>
 			<span class="cart"><a href="cart.html" id="shoppingCart">shopping cart (<span id="itemCount"></span>)</a></span>
 		</header>
 
@@ -75,13 +76,15 @@
 						</span>
 					</section>
 					<h2 id="priceOriginal">$5.00</h2>
-
-					<div class="addcart">
+					<div class="add to-cart">
 						<input type="button" onclick="getOrder()" value="add to cart">
+					</div>
+					<div class="add to-wishlist">
+						<input type="button" onclick="addOrder()" value="add to wish">
 					</div>
 				</form>
 			</div>
-		</div>	
+		</div>
 
 		<footer>
 			<!-- bun bun info -->
@@ -90,7 +93,7 @@
 			<div id="info">grab cinnamon rolls 7am-7pm daily</div>
 
 			<!-- bun bun email -->
-			<div id="news-info">join our newsletter for more discounts and updates!</div> 
+			<div id="news-info">join our newsletter for more discounts and updates!</div>
 			<form method="POST">
 				<input type="text" name="email" id="email" placeholder="email address">
 				<input type="submit" value="sign up">
